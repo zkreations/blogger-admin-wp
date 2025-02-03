@@ -1,0 +1,6 @@
+@use "../abstracts/variables";
+
+body#layout {
+  padding: variables.$layout-padding;
+  background-color: variables.$layout-bg;
+}

@@ -1,0 +1,7 @@
+@use "variables";
+
+@mixin gstatic-icon($name, $size: 20px) {
+  background-image: url("#{variables.$icon-path}#{$name}_#{variables.$icon-settings}.png");
+  background-repeat: no-repeat;
+  background-size: $size;
+}

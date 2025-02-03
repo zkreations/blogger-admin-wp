@@ -1,0 +1,18 @@
+@use "../abstracts/variables";
+
+body#layout {
+  // Section of sections
+  .layout {
+    // Columns
+    &-section {
+      float: left;
+      min-width: variables.$layout-column;
+      margin: 0 variables.$layout-column-gap variables.$layout-column-gap 0;
+    }
+
+    // Hack: Remove original description
+    &-widget-description {
+      display: none;
+    }
+  }
+}

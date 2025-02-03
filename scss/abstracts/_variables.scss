@@ -1,0 +1,57 @@
+// Widgets names
+$widgets: (
+  AdSense: "AdSense",
+  HTML: "HTML",
+  Header: "Header",
+  Text: "Text",
+  TextList: "TextList",
+  Blog: "Blog",
+  BlogSearch: "Search",
+  BlogArchive: "Archive",
+  FeaturedPost: "Featured",
+  PopularPosts: "Populars",
+  Profile: "Profile",
+  Image: "Image",
+  Label: "Label",
+  PageList: "PageList",
+  LinkList: "LinkList",
+  ContactForm: "Contact",
+  Subscribe: "Subscribe"
+) !default;
+
+// Icons path and settings
+$icon-path: "https://www.gstatic.com/images/icons/material/system_gm/1x/" !default;
+$icon-settings: "grey600_24dp" !default;
+
+// Material Icons: https://fonts.google.com/icons?icon.set=Material+Icons
+// Copy the icon name from the URL, for example:
+$icon-edit: "mode_edit" !default;
+$icon-lock: "lock" !default;
+
+// Main layout
+$layout-bg: #f4f4f5 !default;
+$layout-padding: 14px !default;
+$layout-column: 386px !default;
+$layout-column-gap: 16px !default;
+
+// Sections
+$section-bg: #fff !default;
+$section-padding: 12px !default;
+$section-title-color: #263238 !default;
+$section-font-size: 17px !default;
+$section-activated-border-color: #8c8f94 !default;
+
+// Widgets
+$widget-shadow-color: #f2f2f2 !default;
+$widget-content-bg: #f6f7f7 !default;
+$widget-content-border: #c3c4c7 !default;
+$widget-content-hover-border: #8c8f94 !default;
+$widget-title-color: #999 !default;
+$widget-name-color: #262626 !default;
+$widget-add-padding: 12px !default;
+$widget-add-color: #263238 !default;
+$widget-add-hover-color: #23a6b3 !default;
+
+// Edit link
+$editlink-icon-bg: #f1f3f3 !default;
+$editlink-icon-hover-bg: #e3e8e8 !default;

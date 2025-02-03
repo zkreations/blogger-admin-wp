@@ -1,0 +1,38 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+body#layout {
+  // Enable the button to edit widgets
+  .layout-edit .section {
+    .widget-content {
+      .editlink.icon {
+        @include mixins.gstatic-icon(variables.$icon-edit);
+        background-color: variables.$editlink-icon-bg;
+        width: 36px;
+        left: auto;
+        right: 0;
+        border-left: 1px solid variables.$widget-content-border;
+
+        &:hover {
+          background-color: variables.$editlink-icon-hover-bg;
+        }
+      }
+
+      &:hover {
+        border-color: variables.$widget-content-border;
+      }
+
+      .layout-title {
+        margin: 0 58px 0 0;
+      }
+    }
+
+    .widget.el_active .editlink.icon {
+      display: block;
+    }
+
+    .locked-widget .widget-content {
+      background-position: center right 46px;
+    }
+  }
+}

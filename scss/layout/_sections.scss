@@ -1,0 +1,23 @@
+@use "../abstracts/variables";
+
+body#layout {
+  div.section {
+    margin: 0 0 16px 0;
+    padding: variables.$section-padding;
+    background-color: variables.$section-bg;
+    height: auto !important;
+
+    &.activated-section {
+      border-color: variables.$section-activated-border-color;
+    }
+
+    // Section titles
+    h4 {
+      text-transform: capitalize;
+      margin: 0 0 14px;
+      color: variables.$section-title-color;
+      font-size: variables.$section-font-size;
+      font-weight: normal;
+    }
+  }
+}

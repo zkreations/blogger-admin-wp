@@ -1,0 +1,63 @@
+@use "../abstracts/variables";
+
+body#layout {
+  // Normalize the height of the Blog widget
+  .Blog .widget-content {
+    height: auto;
+  }
+
+  // Delete shadow and simulate a new one
+  .widget-wrap3 {
+    overflow: hidden;
+    border-bottom: 1px solid variables.$widget-shadow-color;
+  }
+
+  // Clear draggable widget styles
+  .draggable-widget {
+    .widget-wrap3 {
+      margin-left: 0;
+      background: none;
+    }
+
+    .widget-wrap2 {
+      background: none;
+      cursor: default;
+    }
+  }
+
+  .widget {
+    // Click anywhere to edit
+    .editlink.icon {
+      background-image: none;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    // We avoid the displacement of elements
+    &.el_active {
+      margin: 0;
+
+      // We avoid accidentally activating editing when dragging
+      .editlink.icon {
+        display: none;
+      }
+    }
+  }
+
+  // Prevents the position container from moving
+  .dr_active {
+    margin: 0;
+    border: 1px dashed #ccc;
+  }
+
+  // Replace the title of the widgets
+  @each $key, $item in variables.$widgets {
+    $this: ".#{$key} .layout-title::before";
+
+    #{$this} {
+      content: "#{$item}: ";
+    }
+  }
+}
