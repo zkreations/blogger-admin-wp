@@ -1,6 +1,8 @@
-# blogger-admin-wp
+# Blogger AdminWP
 
 This project is designed to override the styles of Blogger's administration panel, specifically the "Layout" section, which is used to manage the template's widgets. It is easy to install and does not require advanced knowledge.
+
+![Preview](https://raw.githubusercontent.com/zkreations/blogger-admin-wp/main/static/preview.png)
 
 ## Installation
 
@@ -43,6 +45,16 @@ This class only affects the design mode. However, if this mandatory container in
 ```
 
 This way, the container will only be displayed in design mode and will not affect your template's layout. Alternatively, you can add the `layout-section` class to an existing container in your design. Each container with the `layout-section` class will be displayed as a column in design mode.
+
+## Enabling editing  button
+
+By default, to edit a widget you can click anywhere on a widget. If you want to disable this functionality and show an edit button, create a container that wraps all your layout sections and add the `layout-edit` class:
+
+```xml
+<b:tag cond='data:view.isLayoutMode' name='div' class='layout-edit'>
+  <!-- Rest of the content -->
+</b:tag>
+```
 
 ## Customization
 
