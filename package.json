@@ -1,6 +1,6 @@
 {
   "name": "blogger-admin-wp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "layout for Blogger that mimics the WordPress admin panel",
   "main": "main.min.css",
   "scripts": {
