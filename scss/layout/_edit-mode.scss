@@ -7,6 +7,7 @@ body#layout {
     .widget-content {
       .editlink.icon {
         @include mixins.gstatic-icon(variables.$icon-edit);
+
         background-color: variables.$editlink-icon-bg;
         width: 36px;
         left: auto;

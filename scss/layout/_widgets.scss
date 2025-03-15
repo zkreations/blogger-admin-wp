@@ -59,6 +59,7 @@ body#layout {
     // If widget is locked (not draggable)
     .locked-widget .widget-content {
       @include mixins.gstatic-icon(variables.$icon-lock);
+
       background-position: center right 10px;
     }
   }

@@ -97,7 +97,7 @@ body#layout .Subscribe .layout-title::before {
 }
 
 body#layout div.section {
-  margin: 0 0 16px 0;
+  margin: 0 0 16px;
   padding: 12px;
   background-color: #fff;
   height: auto !important;
